@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is just for my practice purpose</title>
+    <script src="content.js"></script>
+    <style>
+        body {
+            background: white;
+            color: black;
+            transition: 0.3s all ease;
+        }
+
+        @keyframes colorchange {
+            0% {
+                background: white;
+                color: black;
+            }
+
+            25% {
+                background: black;
+                color: white;
+            }
+
+            75% {
+                background: #511281;
+                color: #a7bbc7;
+            }
+
+            100% {
+                background: white;
+                color: black;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        h1>span {
+            color: seagreen;
+        }
+
+        section {
+            border-radius: 0 0 2rem 2rem;
+            padding: 2rem;
+            background: #00adb5;
+            margin: 0 auto;
+            width: 60rem;
+            font-size: 3rem;
+            display: block;
+            justify-content: center;
+            box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, .5);
+            transition: .3s all ease;
+            position: relative;
+            top: 0;
+        }
+
+        @keyframes exittoout {
+            100% {
+                top: -250px;
+                display: none;
+            }
+        }
+
+        section:hover {
+            box-shadow: 2px 3px 12px 1px rgba(0, 0, 0, .5);
+        }
+
+        input {
+            border-radius: 50rem;
+            border: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            outline: none;
+            padding: 0.5rem 2rem;
+            margin: auto;
+            width: 50rem;
+            display: block;
+            font-size: 3rem;
+        }
+
+        span#line2,
+        span#line1 {
+            position: absolute;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            height: 0.5rem;
+            border-radius: 50px;
+            transition: 20s all ease;
+            box-shadow: 2px 3px 4px rgba(0, 0, 0, .5);
+        }
+
+        span#line1 {
+            top: 40%;
+            transition: 20s all ease;
+        }
+
+        @keyframes linesec {
+            0% {
+                left: 0;
+                width: 0;
+                background: black;
+                box-shadow: 2px 3px 4px rgba(255, 255, 255, .5);
+            }
+
+            50% {
+                left: 50%;
+                width: 40rem;
+                background: rgb(208, 51, 111);
+                box-shadow: 2px 3px 4px rgba(0, 0, 0,.5);
+            }
+
+            100% {
+                left: 100%;
+                width: 0;
+                background: black;
+                box-shadow: 2px 3px 4px rgba(255, 255, 255, .5);
+            }
+        }
+
+        @keyframes linefir {
+            0% {
+                left: 100%;
+                width: 0;
+                background: black;
+                box-shadow: 2px 3px 4px rgba(255, 255, 255, .5);
+            }
+
+            50% {
+                left: 50%;
+                width: 40rem;
+                background: rgb(208, 51, 111);
+                box-shadow: 2px 3px 4px rgba(0, 0, 0,.5);
+            }
+
+            100% {
+                left: 0;
+                width: 0;
+                background: black;
+                box-shadow: 2px 3px 4px rgba(255, 255, 255, .5);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <input type="text" placeholder="Key..">
+    </section>
+    <span id="line1"></span>
+    <div>
+        <h1>Hey, Welcome you got the right <span>Key</span></h1>
+    </div>
+    <span id="line2"></span>
+</body>
+
+</html>
